@@ -1,0 +1,29 @@
+/* Al igual que en la primera parte del t.p voy a volver a declarar los mismos estilos 
+que anteriormente seleccione para mantener el mismo estilo */
+
+/* la fuente primero */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/* ahora los colores */
+:root{
+  --color-primary: #9EAD8D;
+  --color-secondary: #E6C8C8;
+  --color-background: #F8F4EE;
+  --color-background2: #E8DCC8;
+  --color-text: #433932; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
