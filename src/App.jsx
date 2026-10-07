@@ -10,7 +10,8 @@ import './styles/global.css'
 function App() {
   return (
     <BrowserRouter>
-
+{/*Define las rutas principales de la aplicación.
+Las rutas hijas se renderizan dentro del Layout mediante Outlet. */}
       <Routes >
         <Route element={<Layout />}> 
           <Route path="/" element={<Inicio />}  />

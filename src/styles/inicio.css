@@ -1,60 +1,60 @@
 /* estilos para la pagina de inicio */
 
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-    padding: 30px 60px;
-    background-color: var(--color-background2);
-    border: 5px solid var(--color-primary);
-    border-radius: 60px;
-    
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 30px 60px;
+  background-color: var(--color-background2);
+  border: 5px solid var(--color-primary);
+  border-radius: 60px;
 }
 
 .hero-content {
-    flex: 1;
+  flex: 1;
 }
 
 .hero-content h1 {
-    font-family: 'Lobster two', cursive;
-    font-size: 3rem;
-    color: var(--color-text);
-    margin-bottom: 20px;
+  font-family: "Lobster two", cursive;
+  font-size: 3rem;
+  color: var(--color-text);
+  margin-bottom: 20px;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    color: var(--color-text);
-    margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: var(--color-text);
+  margin-bottom: 30px;
 }
 
 .hero-content a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--color-primary);
-    color: var(--color-text);
-    text-decoration: none;
-    border-radius: 8px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  text-decoration: none;
+  border-radius: 8px;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-image img {
-    width: 400px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 /* animaciones para el boton de productos */
 .hero-content a:hover {
-    transform: scale(1.05);
-    background-color: var(--color-secondary);
+  transform: scale(1.05);
+  background-color: var(--color-secondary);
 }

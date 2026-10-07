@@ -1,16 +1,37 @@
-# React + Vite
+# CARICIAS PARA TU PIEL 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción del trabajo
+Este trabajo práctico consiste en pasar la página del trabajo práctico anterior a react 
+La página consiste en mostrar una tienda de jabones con unos productos, imagenes y un formulario de contacto para que puedan contactarse con el motivo que desee el usuario. 
+Para realizar esta página renovada me base en la estructura ya anteriormente hecha y los migre para una aplicación con React y componentes 
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- Vite
+- JavaScript
+- HTML
+- CSS
+- React Router DOM
 
-## React Compiler
+## Funcionalidades
+- Navegación entre páginas mediante React Router.
+- Formulario de contacto controlado con React.
+- Hook personalizado useForm para manejar los datos del formulario.
+- Validación básica de los campos.
+- Layout (Navbar y Footer compartidos)
+- Galería de imágenes
+- Cards de productos con props
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Como ejecutar la página
+Clonar el repositorio del siguiente link (https://github.com/Puccii0/Caricias-para-tu-piel-react), abrir la carpeta con Visual Studio Code y luego la terminal con los siguientes comandos:
+```
+ npm install 
+ npm run dev
+```
+ Esto va a hacer que inicies una página web local con todo lo que esta preparado, luego de eso abrí: http://localhost:5173 en tu navegador y listo! Ya estarias con la página web funcionando localmente
+
+## Autor: 
+Valentin Pucci Medina
