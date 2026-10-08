@@ -6,29 +6,6 @@
   padding: 40px 20px;
 }
 
-.titulos-productos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 40px 0;
-}
-
-.titulos-productos h1 {
-  font-size: 3rem;
-  text-decoration: underline;
-  margin-bottom: 10px;
-}
-
-.titulos-productos h2 {
-  background: var(--color-background2);
-  padding: 12px 25px;
-  border-radius: 25px;
-  max-width: fit-content;
-  font-size: 1.3rem;
-  max-width: 700px;
-  margin: 0px;
-}
 
 .card {
   width: 300px;
@@ -54,9 +31,17 @@
 }
 
 .boton-stock {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
+  display: block;
+  width: fit-content;
+  margin: 15px auto 0;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .price {
@@ -69,74 +54,34 @@
 
 /* Efecto para la carta en especifico de hello kitty*/
 
-/* Escondemos a la kitty para que aparezca al pasar el mouse */
-.hellokittyjabon {
+.card-hellokitty {
   position: relative;
-  overflow: hidden;
-}
-/* Imagen de Hello Kitty oculta por encima de la tarjeta.
-   Se posiciona de forma absoluta para que pueda deslizarse
-   hacia abajo al activar el efecto hover. */
-.Kittyespia {
-  position: absolute;
-  width: 75px;
-  left: 20px;
-  top: -100px;
-  transition: 0.45s ease;
-  z-index: 100;
 }
 
-/* Configuramos el mensajito que aparece al lado de la imagen
-al pasar el mouse */
-.kittymsj {
+/* Moño que aparece al pasar el mouse */
+.card-hellokitty::after {
+  content: "🎀";
   position: absolute;
-  top: 20px;
-  left: 110px;
-  background: white;
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 0.9rem;
+  top: 10px;
+  right: 14px;
+  font-size: 2rem;
   opacity: 0;
-  transition: 0.3s;
-  z-index: 100;
+  transition: opacity 0.3s;
 }
 
-.hellokittyjabon:hover .Kittyespia {
-  top: -10px;
-  animation: saludar 0.8s ease;
-}
-
-.hellokittyjabon:hover .kittymsj {
+.card-hellokitty:hover::after {
   opacity: 1;
 }
 
-/* El movimiento que hace como si tambaleara cuando pasas el mouse */
-@keyframes saludar {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(-10deg);
-  }
-
-  50% {
-    transform: rotate(10deg);
-  }
-
-  75% {
-    transform: rotate(-6deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
+.card-hellokitty:hover img {
+  animation: saludar 0.8s ease-in-out infinite;
+  transform-origin: bottom center;
 }
 
-.hello-card:hover .hello-peek {
-  top: -10px;
-
-  animation: saludar 0.8s ease;
+@keyframes saludar {
+  0%, 100% { transform: rotate(0deg); }
+  25%      { transform: rotate(-5deg); }
+  75%      { transform: rotate(5deg); }
 }
 
 .card p {
@@ -161,4 +106,12 @@ al pasar el mouse */
   height: 280px;
   object-fit: cover;
   background-color: var(--color-background);
+}
+
+.Titulos-productos {
+  text-align: center;
+  color: var(--color-text);
+  font-family: "Lobster Two", cursive;
+  font-size: 3rem;
+  margin: 40px 0 10px;
 }

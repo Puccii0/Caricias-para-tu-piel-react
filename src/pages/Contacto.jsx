@@ -1,5 +1,5 @@
 import useForm from "../hooks/useForm";
-
+import "../styles/contacto.css";
 
 // useForm centraliza el estado y las funciones del formulario de contacto.
 function Contacto() {
@@ -10,8 +10,7 @@ function Contacto() {
     mensaje: "",
   });
 
-  
-// Evita el envío tradicional del formulario, muestra los datos y luego lo limpia.
+  // Evita el envío tradicional del formulario, muestra los datos y luego lo limpia.
   const manejarEnvio = (e) => {
     e.preventDefault();
     console.log("Datos enviados:", valores);
@@ -19,7 +18,7 @@ function Contacto() {
   };
 
   return (
-    <main>
+    <main className="contacto">
       <h1>Contacto</h1>
       <p>¿Tenés alguna consulta? Ponete en contacto con nosotros.</p>
 
@@ -68,10 +67,17 @@ function Contacto() {
           required
         ></textarea>
 
-        <button type="submit">Enviar</button>
-        <button type="button" onClick={limpiarFormulario}>
-          Limpiar
-        </button>
+        <div className="botonform">
+          <button type="submit">Enviar</button>
+
+          <button
+            type="button"
+            onClick={limpiarFormulario}
+            className="borrarbutton"
+          >
+            Limpiar
+          </button>
+        </div>
       </form>
     </main>
   );

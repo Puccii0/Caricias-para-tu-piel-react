@@ -9,6 +9,7 @@ import gallery6 from "../assets/jabon6.jpg";
 import gallery from "../assets/jabon.jpg";
 import gallery8 from "../assets/jabon8.jpg";
 import gallery7 from "../assets/jabon7.jpg";
+import gallery4 from "../assets/istockphoto-1341614092-612x612.png";
 
 const galeria = [
   {
@@ -31,6 +32,10 @@ const galeria = [
     title: "Jabón de Lavanda",
     image: gallery7,
   },
+  {
+    title: "Jabones de coco y menta",
+    image: gallery4
+  }
 ];
 
 function Inicio() {
@@ -41,6 +46,7 @@ function Inicio() {
           <h1>Caricias para tu piel</h1>
 
           <p>Bienvenido a nuestra tienda de jabones artesanales.</p>
+          <p> Descubrí una nueva forma de cuidar tu piel con productos hechos a mano, pensados para vos y creados con amor por cada detalle.</p>
 
           <Link to="/productos">Ver productos</Link>
         </div>
@@ -49,8 +55,12 @@ function Inicio() {
           <img src={jabon} alt="Jabón artesanal" />
         </div>
       </section>
-
+      <section className="gallery-section">
+      <h1>Galería</h1>
+      <div className="gallery">
       <Gallery items={galeria} />
+      </div>
+      </section>
     </main>
   );
 }
