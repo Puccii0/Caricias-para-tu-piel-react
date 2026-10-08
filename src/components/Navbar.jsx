@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "../styles/navbar.css";
 import logo from "../assets/hand-soap.png";
 
+// Barra de navegación con el logo y los enlaces a las páginas.
 function Navbar() {
   return (
     <nav>
