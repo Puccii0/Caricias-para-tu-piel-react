@@ -6,7 +6,6 @@
   padding: 40px 20px;
 }
 
-
 .card {
   width: 300px;
   border: 2px solid var(--color-primary);
@@ -41,7 +40,9 @@
   text-decoration: none;
   border-radius: 25px;
   font-weight: bold;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .price {
@@ -79,9 +80,16 @@
 }
 
 @keyframes saludar {
-  0%, 100% { transform: rotate(0deg); }
-  25%      { transform: rotate(-5deg); }
-  75%      { transform: rotate(5deg); }
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
 }
 
 .card p {

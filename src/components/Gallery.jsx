@@ -1,6 +1,5 @@
 import "../styles/gallery.css";
 
-
 // Recibe por props el arreglo de imágenes y las muestra en una galería.
 function Gallery(props) {
   return (

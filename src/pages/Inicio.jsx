@@ -34,8 +34,8 @@ const galeria = [
   },
   {
     title: "Jabones de coco y menta",
-    image: gallery4
-  }
+    image: gallery4,
+  },
 ];
 
 function Inicio() {
@@ -46,7 +46,11 @@ function Inicio() {
           <h1>Caricias para tu piel</h1>
 
           <p>Bienvenido a nuestra tienda de jabones artesanales.</p>
-          <p> Descubrí una nueva forma de cuidar tu piel con productos hechos a mano, pensados para vos y creados con amor por cada detalle.</p>
+          <p>
+            {" "}
+            Descubrí una nueva forma de cuidar tu piel con productos hechos a
+            mano, pensados para vos y creados con amor por cada detalle.
+          </p>
 
           <Link to="/productos">Ver productos</Link>
         </div>
@@ -56,10 +60,9 @@ function Inicio() {
         </div>
       </section>
       <section className="gallery-section">
-      <h1>Galería</h1>
-      <div className="gallery">
-      <Gallery items={galeria} />
-      </div>
+        <h1>Galería</h1>
+
+        <Gallery items={galeria} />
       </section>
     </main>
   );

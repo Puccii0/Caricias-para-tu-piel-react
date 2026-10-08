@@ -14,7 +14,7 @@ footer p {
 
 .redes-sociales {
   display: flex;
-  
+
   justify-content: center;
   align-items: center;
   gap: 25px;
@@ -30,7 +30,9 @@ footer p {
   text-decoration: none;
   font-family: "Playfair Display", serif;
   font-size: 1rem;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 .redes-sociales svg {

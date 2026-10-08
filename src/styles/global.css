@@ -6,9 +6,9 @@ que anteriormente seleccione para mantener el mismo estilo */
 
 /* ahora los colores */
 :root {
-  --color-primary: #9EAD8D;
+  --color-primary: #9ead8d;
   --color-secondary: #e6c8c8;
-  --color-background: #F8F4EE;
+  --color-background: #f8f4ee;
   --color-background2: #e8dcc8;
   --color-text: #503a3a;
 }
@@ -33,12 +33,11 @@ body {
 
 body::before {
   content: "";
-  position: fixed;          
-  inset: 0;                 
+  position: fixed;
+  inset: 0;
   background-image: url("../assets/micheile-henderson-2Cp7Tdu9t9U-unsplash.jpg");
   background-size: cover;
   background-position: center;
   filter: blur(8px);
-  z-index: -1;              
+  z-index: -1;
 }
-

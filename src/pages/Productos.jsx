@@ -31,10 +31,11 @@ function Productos() {
     },
     {
       title: "Jabón de Hello Kitty",
-      description: "Un jabón con aroma dulce y suave, ideal para los amantes de Hello Kitty.",
+      description:
+        "Un jabón con aroma dulce y suave, ideal para los amantes de Hello Kitty.",
       price: "3500$",
       image: Hellokitty,
-      extraClass: "card-hellokitty", 
+      extraClass: "card-hellokitty",
     },
   ];
 
